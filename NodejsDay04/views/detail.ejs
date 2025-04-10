@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>컴스터디 중고차 쇼핑몰 - 상세 정보</h1>
+    <table width="550" border="1">
+        <tr>
+            <th width="20%">_id</th>
+            <td width="80%"><%=car._id %></td>
+        </tr>
+        <tr>
+            <th>name</th>
+            <td><%=car.name %></td>
+        </tr>
+        <tr>
+            <th>price</th>
+            <td><%=car.price %></td>
+        </tr>
+        <tr>
+            <th>company</th>
+            <td><%=car.company %></td>
+        </tr>
+        <tr>
+            <th>year</th>
+            <td><%=car.year %></td>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <a href="/home">목록</a> | 
+                <a href="/modify/<%=car._id %>">수정</a> | 
+                <a href="/delete/<%=car._id %>">삭제</a>
+            </th>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<h3>중고차 세부 목록</h3>
+
+<table width="550" border="1">
+<% 
+carList.forEach(function myFunction(item) {
+%>
+    <tr>
+        <td><%=item._id %></td>
+        <td><a href="/home/<%=item._id %>"><%=item.name %></a></td>
+        <td><%=item.price %></td>
+    </tr>
+<%
+});
+%>
+</table>
